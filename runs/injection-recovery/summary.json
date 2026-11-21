@@ -1,0 +1,106 @@
+{
+  "plan": {
+    "stars": 8,
+    "periods_days": [
+      2.0,
+      5.0,
+      10.0
+    ],
+    "depths_ppm": [
+      200.0,
+      500.0,
+      1500.0
+    ],
+    "duration_days": 0.12,
+    "seed": 2026,
+    "search_period_range": [
+      0.5,
+      15.0
+    ],
+    "quarters": [
+      9,
+      10
+    ],
+    "recovery": "Period within 1%, epoch within injected duration, depth SNR >=7.1; harmonics reported separately.",
+    "background_selection": "First KICs in fresh test partition, no quiet-star/SNR ranking.",
+    "nulls": "One uninjected search per background; SNR threshold is exploratory, not calibrated global FAP.",
+    "dataset_sha256": "3521d11801f9d2115f5976ed2563843cd0896b06eb94e4844f87eabd48a2a302",
+    "code_sha256": "deb4be0da9d385b88df391a3b5699b58fae3b93b804f3b7d6449a90341e61049"
+  },
+  "trials": 72,
+  "strict_recovered": 44,
+  "strict_recovery_fraction": 0.6111111111111112,
+  "harmonic_matches": 1,
+  "cells": [
+    {
+      "injected_period": 2.0,
+      "injected_depth_ppm": 200.0,
+      "sum": 3,
+      "count": 8,
+      "mean": 0.375
+    },
+    {
+      "injected_period": 2.0,
+      "injected_depth_ppm": 500.0,
+      "sum": 7,
+      "count": 8,
+      "mean": 0.875
+    },
+    {
+      "injected_period": 2.0,
+      "injected_depth_ppm": 1500.0,
+      "sum": 7,
+      "count": 8,
+      "mean": 0.875
+    },
+    {
+      "injected_period": 5.0,
+      "injected_depth_ppm": 200.0,
+      "sum": 3,
+      "count": 8,
+      "mean": 0.375
+    },
+    {
+      "injected_period": 5.0,
+      "injected_depth_ppm": 500.0,
+      "sum": 5,
+      "count": 8,
+      "mean": 0.625
+    },
+    {
+      "injected_period": 5.0,
+      "injected_depth_ppm": 1500.0,
+      "sum": 7,
+      "count": 8,
+      "mean": 0.875
+    },
+    {
+      "injected_period": 10.0,
+      "injected_depth_ppm": 200.0,
+      "sum": 0,
+      "count": 8,
+      "mean": 0.0
+    },
+    {
+      "injected_period": 10.0,
+      "injected_depth_ppm": 500.0,
+      "sum": 5,
+      "count": 8,
+      "mean": 0.625
+    },
+    {
+      "injected_period": 10.0,
+      "injected_depth_ppm": 1500.0,
+      "sum": 7,
+      "count": 8,
+      "mean": 0.875
+    }
+  ],
+  "null_backgrounds_above_snr_7_1": 5,
+  "limitations": [
+    "Box injections are simplified, without limb darkening.",
+    "Known catalog windows were removed; unknown signals and stellar variability remain.",
+    "Small selected KOI-background experiment, not mission-wide detection completeness.",
+    "BLS detection recovery is separate from CNN vetting; no joint discovery-performance claim."
+  ]
+}

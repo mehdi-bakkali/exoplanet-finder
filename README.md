@@ -20,6 +20,27 @@ A complete local research workflow for vetting NASA Kepler transit signals: real
 - **Analyze your own curve.** Upload a CSV, supply its ephemeris, and inspect CNN/baseline scores, the processed transit, data coverage, and a JSON export. A real example is included.
 - **Reproduce the experiment.** Download public data, preprocess it, train locally, and export exact splits, predictions, metrics, and checksums.
 
+## Extended research study — v0.3
+
+The extended experiment uses **3,273 stars with both Q9 and Q10 observations**, excluding every pilot star. Its fixed star partitions contain **1,782 training, 495 validation, 505 calibration, and 491 test stars**.
+
+| Input mode | Test AP, mean ± seed SD |
+|---|---:|
+| Dual-view | **0.865 ± 0.011** |
+| Global-only | 0.793 ± 0.013 |
+| Local-only | **0.868 ± 0.015** |
+| Mask-only | 0.539 ± 0.004 |
+
+Three seeds per mode share the same partitions and network capacity. The same-cohort logistic baseline reaches **0.784 AP**. The predeclared three-seed dual-view ensemble reaches **0.871 AP**. Local-only and dual-view means are close; these results do not establish a dual-view advantage.
+
+A monotonic calibrator fitted on the **505 separate calibration stars** slightly improves ensemble test log loss (**0.4105 → 0.4099**) and slightly worsens Brier score (**0.1231 → 0.1241**). The study keeps both outcomes. Calibration refers to catalog labels in the eligible KOI cohort, not all Kepler stars or confirmed planets.
+
+The BLS extension searches periods without a supplied ephemeris. It strictly recovered **44/72** injected box transits on real Q9/Q10 backgrounds, with one additional harmonic match. **5/8 uninjected backgrounds** also exceeded the exploratory SNR threshold, so this is a recovery experiment rather than a calibrated false-alarm guarantee. Open **Research Study** in the app or [read the full measured report](docs/RESEARCH_RESULTS.md).
+
+![Multi-quarter ablation, calibration and recovery results](docs/figures/research-study.png)
+
+[Study design and reproduction](docs/RESEARCH_STUDY.md) · [Every seed and checkpoint](runs/research-q9-q10) · [BLS trial ledger](runs/injection-recovery/trials.csv) · [Export figure as PDF](docs/figures/research-study.pdf)
+
 ## Measured results
 
 The pilot uses **356 real stars**, split by Kepler star ID into **213 train / 71 validation / 72 test**. The positive label is the DR25 catalog’s planet-candidate disposition.
@@ -134,15 +155,29 @@ The test suite checks transit preservation, stellar-group separation, both CNN b
 - [x] Real Kepler acquisition and provenance, dual-view CNN, and baseline
 - [x] Grouped evaluation, uncertainty, error review, and local app
 - [x] Reliability diagnostics and validation threshold sandbox
-- [ ] Multi-quarter dataset and several thousand signals
-- [ ] Multiple seeds; global/local/mask-only ablations
-- [ ] Calibration on a separate representative sample
-- [ ] BLS period search with injection/recovery experiments
+- [x] Initial multi-quarter study: 3,273 Q9/Q10 stars
+- [x] Three seeds; global/local/mask-only ablations
+- [x] Calibration on 505 separate stars from the natural eligible KOI cohort
+- [x] Blind BLS search and 72-trial real-background injection/recovery experiment
 
-See the [implementation plan](docs/PLAN.md) and [advanced learning guide](docs/LEARNING.md) for acceptance criteria and experiments.
+These are completed initial experiments; broader population validation remains future work. See the [implementation plan](docs/PLAN.md) and [advanced learning guide](docs/LEARNING.md) for acceptance criteria and experiments.
 
 ## Attribution
 
 Built by [Mehdi Bakkali](https://github.com/mehdi-bakkali). Uses NASA Kepler observations hosted by MAST/STScI and the NASA Exoplanet Archive (DOI **10.26133/NEA4**). [Catalog definitions](https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html) · [MAST archive](https://archive.stsci.edu/kepler/).
 
 Original project code is available under the [MIT license](LICENSE). Archive data retain their source terms and acknowledgment requirements; see [data provenance](docs/DATA_PROVENANCE.md). No NASA or Google endorsement is implied.
+
+## Run the extended study
+
+```sh
+# From a source checkout without completed study artifacts:
+.venv/bin/python -m exofinder.multiquarter --limit 4000 --workers 12
+.venv/bin/python -m exofinder.research --epochs 30 --device auto
+.venv/bin/python -m exofinder.bls --experiment --stars 8
+
+# Blind search on an individual curve:
+.venv/bin/python -m exofinder.bls --csv examples/kepler-479-b.csv --output bls-result.json
+```
+
+The public repository already includes the completed study. Read the [fresh-clone reproduction instructions](docs/RESEARCH_STUDY.md#reproduce-from-a-fresh-clone) to archive reference outputs and restore raw FITS caches before rerunning. No new data download is needed just to inspect the research dashboard.

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "exoplanet-finder"
-version = "0.2.0"
+version = "0.3.0"
 description = "Reproducible Kepler transit vetting with a dual-view 1D CNN"
 authors = [{name = "mehdi-bakkali"}]
 readme = "README.md"
@@ -19,6 +19,7 @@ Issues = "https://github.com/mehdi-bakkali/exoplanet-finder/issues"
 
 [project.optional-dependencies]
 test = ["pytest", "httpx"]
+research = ["matplotlib>=3.8"]
 
 [tool.setuptools.packages.find]
 include = ["exofinder*"]

@@ -14,7 +14,17 @@ from .preprocess import prepare, summary_features
 from .diagnostics import build_diagnostics, operating_point
 from scipy.special import expit
 
-app = FastAPI(title='Exoplanet Finder', version='0.2.0')
+app = FastAPI(title='Exoplanet Finder', version='0.3.0')
+
+
+@app.middleware('http')
+async def fresh_research_responses(request, call_next):
+    response = await call_next(request)
+    if request.url.path.startswith('/api/'):
+        response.headers['Cache-Control'] = 'no-store'
+    elif request.url.path == '/':
+        response.headers['Cache-Control'] = 'no-cache'
+    return response
 
 
 @lru_cache(maxsize=1)
@@ -89,6 +99,39 @@ def validation_threshold(threshold: float = Query(ge=0, le=1, allow_inf_nan=Fals
             **operating_point(validation.label, validation.score, threshold)}
 
 
+@app.get('/api/research')
+def research_results():
+    def read_if_present(relative):
+        file = ROOT/relative
+        return json.loads(file.read_text()) if file.exists() else None
+    manifest = read_if_present('data/research-q9-q10/manifest.json')
+    if manifest:
+        manifest.pop('failures', None)
+    return {'dataset':manifest, 'study':read_if_present('runs/research-q9-q10/summary.json'),
+            'injection':read_if_present('runs/injection-recovery/summary.json')}
+
+
+class SearchInput(BaseModel):
+    model_config = ConfigDict(allow_inf_nan=False)
+    time: list[float] = Field(min_length=200, max_length=20000)
+    flux: list[float] = Field(min_length=200, max_length=20000)
+    minimum_period: float = Field(default=.5, ge=.25, le=30)
+    maximum_period: float = Field(default=15, gt=.25, le=30)
+
+
+@app.post('/api/bls')
+def bls_search(body: SearchInput):
+    from .bls import search
+    if len(body.time) != len(body.flux):
+        raise HTTPException(422, 'Time and flux lengths differ.')
+    if np.ptp(body.time) > 500:
+        raise HTTPException(422, 'Interactive BLS supports at most 500 days; use the CLI for longer curves.')
+    try:
+        return search(body.time, body.flux, body.minimum_period, body.maximum_period)
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from exc
+
+
 class CurveInput(BaseModel):
     model_config = ConfigDict(allow_inf_nan=False)
     time: list[float] = Field(min_length=200, max_length=100000)
@@ -127,6 +170,8 @@ def export(kind: str):
     run, *_ = state()
     if kind == 'diagnostics':
         return JSONResponse(diagnostics(), headers={'Content-Disposition':'attachment; filename="diagnostics.json"'})
+    if kind == 'research':
+        return JSONResponse(research_results(), headers={'Content-Disposition':'attachment; filename="research-report.json"'})
     files = {'predictions':'predictions.csv','metrics':'metrics.json','splits':'splits.json'}
     if kind not in files:
         raise HTTPException(404,'Unknown export')

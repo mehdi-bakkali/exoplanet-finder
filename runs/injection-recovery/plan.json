@@ -1,0 +1,28 @@
+{
+  "stars": 8,
+  "periods_days": [
+    2.0,
+    5.0,
+    10.0
+  ],
+  "depths_ppm": [
+    200.0,
+    500.0,
+    1500.0
+  ],
+  "duration_days": 0.12,
+  "seed": 2026,
+  "search_period_range": [
+    0.5,
+    15.0
+  ],
+  "quarters": [
+    9,
+    10
+  ],
+  "recovery": "Period within 1%, epoch within injected duration, depth SNR >=7.1; harmonics reported separately.",
+  "background_selection": "First KICs in fresh test partition, no quiet-star/SNR ranking.",
+  "nulls": "One uninjected search per background; SNR threshold is exploratory, not calibrated global FAP.",
+  "dataset_sha256": "3521d11801f9d2115f5976ed2563843cd0896b06eb94e4844f87eabd48a2a302",
+  "code_sha256": "deb4be0da9d385b88df391a3b5699b58fae3b93b804f3b7d6449a90341e61049"
+}

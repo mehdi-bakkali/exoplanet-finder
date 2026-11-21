@@ -35,7 +35,11 @@ Can a compact dual-view 1D CNN distinguish Kepler DR25 planet-candidate signals 
 - Explorer and evaluation read the run artifacts, not hard-coded figures.
 - Desktop/mobile navigation, filtering, phase switching, keyboard focus and upload flow work.
 
-## Next research milestones
+## Extended study delivered
+
+The initial versions of milestones 1–4 below are now implemented. See [measured results](RESEARCH_RESULTS.md) and [study design](RESEARCH_STUDY.md): 3,273 Q9/Q10 stars, three seeds × four input modes, independent calibration, and real-background BLS recovery trials. Their remaining scope limits are stated in the report.
+
+## Research milestones and further scope
 
 1. **Dataset scale:** at least several thousand KOIs, multiple quarters, a predeclared selection function and a failure audit by label. Preserve the pilot as a separate experiment.
 2. **Robustness:** three or more predeclared seeds; global-only/local-only/mask-only ablations; stratify errors by period, depth/SNR and stellar-eclipse flags. Do not tune repeatedly against this pilot test set.

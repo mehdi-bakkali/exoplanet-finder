@@ -1,0 +1,199 @@
+{
+  "mode": "mask",
+  "device": "mps",
+  "seed": 44,
+  "best_epoch": 7,
+  "epochs_run": 13,
+  "seconds": 2.121203899383545,
+  "validation_ap": 0.4854262005659753,
+  "threshold": 0.4800774157047272,
+  "calibrated_threshold": 0.45693905252325756,
+  "raw_test": {
+    "average_precision": 0.5394329734618969,
+    "roc_auc": 0.5724437491678872,
+    "precision": 0.4759916492693111,
+    "recall": 0.9827586206896551,
+    "f1": 0.6413502109704642,
+    "brier": 0.2440122365951538,
+    "confusion_matrix": [
+      [
+        8,
+        251
+      ],
+      [
+        4,
+        228
+      ]
+    ]
+  },
+  "raw_probability_metrics": {
+    "average_precision": 0.5394329734618969,
+    "brier": 0.2440122365951538,
+    "log_loss": 0.6811224818229675,
+    "reliability": [
+      {
+        "lower": 0.0,
+        "upper": 0.125,
+        "count": 1,
+        "mean_score": 0.12333712726831436,
+        "candidate_fraction": 0.0,
+        "fraction_95ci": [
+          0.0,
+          0.7934506856227626
+        ]
+      },
+      {
+        "lower": 0.125,
+        "upper": 0.25,
+        "count": 5,
+        "mean_score": 0.16013126075267792,
+        "candidate_fraction": 0.4,
+        "fraction_95ci": [
+          0.11762077423264783,
+          0.769275718723987
+        ]
+      },
+      {
+        "lower": 0.25,
+        "upper": 0.375,
+        "count": 2,
+        "mean_score": 0.3117656707763672,
+        "candidate_fraction": 0.5,
+        "fraction_95ci": [
+          0.09453120573423074,
+          0.9054687942657693
+        ]
+      },
+      {
+        "lower": 0.375,
+        "upper": 0.5,
+        "count": 432,
+        "mean_score": 0.4799240231513977,
+        "candidate_fraction": 0.4375,
+        "fraction_95ci": [
+          0.39147462119641263,
+          0.4846271150952335
+        ]
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.625,
+        "count": 30,
+        "mean_score": 0.5580067038536072,
+        "candidate_fraction": 0.8,
+        "fraction_95ci": [
+          0.6269430358685175,
+          0.9049489282271013
+        ]
+      },
+      {
+        "lower": 0.625,
+        "upper": 0.75,
+        "count": 19,
+        "mean_score": 0.6866590976715088,
+        "candidate_fraction": 0.7894736842105263,
+        "fraction_95ci": [
+          0.5666572155618583,
+          0.9149232336708375
+        ]
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.875,
+        "count": 2,
+        "mean_score": 0.8049906492233276,
+        "candidate_fraction": 0.5,
+        "fraction_95ci": [
+          0.09453120573423074,
+          0.9054687942657693
+        ]
+      }
+    ]
+  },
+  "calibrated_test": {
+    "average_precision": 0.5394329734618969,
+    "brier": 0.24397452175617218,
+    "log_loss": 0.6810595989227295,
+    "reliability": [
+      {
+        "lower": 0.125,
+        "upper": 0.25,
+        "count": 6,
+        "mean_score": 0.16666632890701294,
+        "candidate_fraction": 0.3333333333333333,
+        "fraction_95ci": [
+          0.09677141110578041,
+          0.700006684861608
+        ]
+      },
+      {
+        "lower": 0.25,
+        "upper": 0.375,
+        "count": 3,
+        "mean_score": 0.32865110039711,
+        "candidate_fraction": 0.6666666666666666,
+        "fraction_95ci": [
+          0.2076596008020477,
+          0.9385080552796037
+        ]
+      },
+      {
+        "lower": 0.375,
+        "upper": 0.5,
+        "count": 440,
+        "mean_score": 0.45760783553123474,
+        "candidate_fraction": 0.44545454545454544,
+        "fraction_95ci": [
+          0.3996856539769593,
+          0.4921676214526546
+        ]
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.625,
+        "count": 28,
+        "mean_score": 0.5595133900642395,
+        "candidate_fraction": 0.75,
+        "fraction_95ci": [
+          0.5664432968100104,
+          0.8732350508070668
+        ]
+      },
+      {
+        "lower": 0.625,
+        "upper": 0.75,
+        "count": 12,
+        "mean_score": 0.6644219756126404,
+        "candidate_fraction": 0.8333333333333334,
+        "fraction_95ci": [
+          0.5519691377470266,
+          0.9530348578161463
+        ]
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.875,
+        "count": 2,
+        "mean_score": 0.7594157457351685,
+        "candidate_fraction": 0.5,
+        "fraction_95ci": [
+          0.09453120573423074,
+          0.9054687942657693
+        ]
+      }
+    ]
+  },
+  "calibrator": {
+    "slope": 0.8827958683238027,
+    "intercept": -0.10228397187547972,
+    "method": "monotonic Platt sigmoid on clipped logits",
+    "fit_count": 505,
+    "fit_prevalence": 0.46534653465346537
+  },
+  "counts": {
+    "train": 1782,
+    "validation": 495,
+    "calibration": 505,
+    "test": 491
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "device": "mps",
+  "dataset_sha256": "3521d11801f9d2115f5976ed2563843cd0896b06eb94e4844f87eabd48a2a302",
+  "metadata_sha256": "7c4033cd031d5d8808ea6117799b282e8563680ce70eba9d378fc72e4d32a0f7",
+  "modes": [
+    "dual",
+    "global",
+    "local",
+    "mask"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 30,
+  "patience": 6,
+  "split_rule": "SHA256 kepler-research-2026-v1:KIC; 55/15/15/15",
+  "calibration": "Fit monotonic Platt on calibration only; report on test; no model selection on calibration.",
+  "ensemble": "Mean of three predeclared dual-view seed scores; calibrate that mean on calibration only.",
+  "code_sha256": "b1d98c4b637bac826d11637f82fc04160830b23617f989c8bd0765578279c7de",
+  "model_code_sha256": "77c741f508a8e0060f8782f3bcae9d21990dea2065ac4881abb8136c428f8060",
+  "preprocessing_sha256": "f0ad5eb1c29b89796da7a30105d54114ab4e5daa728f69625931f177810dd2aa",
+  "acquisition_sha256": "b6d0c18907f2150e16b9a7fa770c3ebd2d2b2aadcbb52a996d56dfbb67872f7b",
+  "environment": {
+    "python": "3.12.15",
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  }
+}

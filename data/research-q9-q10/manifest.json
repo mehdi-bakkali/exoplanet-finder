@@ -1,0 +1,3665 @@
+{
+  "source": "NASA Kepler DR25 KOIs and Q9/Q10 PDCSAP FITS",
+  "created_utc": "2026-11-21T09:13:43.468277+00:00",
+  "selection_seed": 2026,
+  "requested": 4000,
+  "eligible_stars": 5026,
+  "selected": 4000,
+  "usable": 3273,
+  "quarters": [
+    9,
+    10
+  ],
+  "required_quarters": "both",
+  "pilot_stars_excluded": 356,
+  "sampling": "Random eligible star cohort without class balancing; one KOI per star.",
+  "population": "DR25 KOI stars, 0.5<period<30d, valid duration, Q9 and Q10 available; not all Kepler stars.",
+  "selection_counts": {
+    "FALSE POSITIVE": 2228,
+    "CANDIDATE": 1772
+  },
+  "usable_counts": {
+    "FALSE POSITIVE": 1748,
+    "CANDIDATE": 1525
+  },
+  "catalog_sha256": "69f6689423bcc5fb743ecfea0b1deadf234c5244fb046f668b3b62560f4ab1dc",
+  "views_sha256": "3521d11801f9d2115f5976ed2563843cd0896b06eb94e4844f87eabd48a2a302",
+  "objects_sha256": "7c4033cd031d5d8808ea6117799b282e8563680ce70eba9d378fc72e4d32a0f7",
+  "failures": [
+    {
+      "id": "K03853.01",
+      "kepid": 2697935,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0026/002697935/kplr002697935-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01593.02",
+      "kepid": 5289854,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005289854/kplr005289854-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04353.01",
+      "kepid": 4571844,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004571844/kplr004571844-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04539.01",
+      "kepid": 3962872,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003962872/kplr003962872-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07314.01",
+      "kepid": 10342097,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0103/010342097/kplr010342097-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03767.01",
+      "kepid": 8323764,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008323764/kplr008323764-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04695.01",
+      "kepid": 4852297,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004852297/kplr004852297-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00191.02",
+      "kepid": 5972334,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005972334/kplr005972334-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00497.02",
+      "kepid": 4757437,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004757437/kplr004757437-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03604.01",
+      "kepid": 6956216,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006956216/kplr006956216-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02842.02",
+      "kepid": 8733898,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0087/008733898/kplr008733898-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07128.01",
+      "kepid": 9083503,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009083503/kplr009083503-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00510.03",
+      "kepid": 6422155,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006422155/kplr006422155-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05327.01",
+      "kepid": 6776555,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006776555/kplr006776555-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07737.01",
+      "kepid": 5716508,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005716508/kplr005716508-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03326.01",
+      "kepid": 11093538,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0110/011093538/kplr011093538-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03812.01",
+      "kepid": 6148271,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006148271/kplr006148271-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02966.01",
+      "kepid": 5014903,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005014903/kplr005014903-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06356.01",
+      "kepid": 3757588,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003757588/kplr003757588-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04671.01",
+      "kepid": 5428471,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005428471/kplr005428471-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06551.01",
+      "kepid": 5282656,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005282656/kplr005282656-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07014.01",
+      "kepid": 8302455,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008302455/kplr008302455-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02639.01",
+      "kepid": 11391755,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0113/011391755/kplr011391755-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06201.01",
+      "kepid": 9343862,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0093/009343862/kplr009343862-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02098.01",
+      "kepid": 6105462,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006105462/kplr006105462-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06552.01",
+      "kepid": 5284133,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005284133/kplr005284133-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03954.01",
+      "kepid": 8030339,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008030339/kplr008030339-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04286.01",
+      "kepid": 5024177,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024177/kplr005024177-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03590.01",
+      "kepid": 3348093,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003348093/kplr003348093-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03159.01",
+      "kepid": 5200084,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005200084/kplr005200084-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03715.01",
+      "kepid": 4937143,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004937143/kplr004937143-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03870.01",
+      "kepid": 8258160,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008258160/kplr008258160-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06112.01",
+      "kepid": 4285087,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004285087/kplr004285087-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07654.01",
+      "kepid": 3353454,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003353454/kplr003353454-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04908.01",
+      "kepid": 3962684,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003962684/kplr003962684-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03637.01",
+      "kepid": 5193384,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005193384/kplr005193384-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04836.01",
+      "kepid": 4175105,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004175105/kplr004175105-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04456.01",
+      "kepid": 3557560,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003557560/kplr003557560-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03606.01",
+      "kepid": 10275074,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010275074/kplr010275074-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02776.01",
+      "kepid": 4275117,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004275117/kplr004275117-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01710.01",
+      "kepid": 7815744,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007815744/kplr007815744-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06457.01",
+      "kepid": 4840263,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004840263/kplr004840263-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06337.01",
+      "kepid": 3458919,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0034/003458919/kplr003458919-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02955.01",
+      "kepid": 5108946,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005108946/kplr005108946-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06054.01",
+      "kepid": 8168581,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008168581/kplr008168581-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05566.01",
+      "kepid": 8741367,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0087/008741367/kplr008741367-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03398.01",
+      "kepid": 3561464,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003561464/kplr003561464-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03699.01",
+      "kepid": 2438490,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002438490/kplr002438490-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04213.01",
+      "kepid": 5632701,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005632701/kplr005632701-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04199.01",
+      "kepid": 5340878,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005340878/kplr005340878-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04438.01",
+      "kepid": 6343576,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006343576/kplr006343576-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03575.01",
+      "kepid": 12316447,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0123/012316447/kplr012316447-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04035.01",
+      "kepid": 3247404,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003247404/kplr003247404-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03534.01",
+      "kepid": 6431670,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006431670/kplr006431670-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07075.01",
+      "kepid": 8690001,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008690001/kplr008690001-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02949.01",
+      "kepid": 6026737,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006026737/kplr006026737-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03625.01",
+      "kepid": 10489521,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010489521/kplr010489521-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02839.01",
+      "kepid": 6186964,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006186964/kplr006186964-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02276.01",
+      "kepid": 3458028,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0034/003458028/kplr003458028-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04271.01",
+      "kepid": 5992210,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005992210/kplr005992210-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02671.01",
+      "kepid": 2437505,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002437505/kplr002437505-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04803.01",
+      "kepid": 4473613,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004473613/kplr004473613-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02753.01",
+      "kepid": 6265792,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006265792/kplr006265792-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01590.03",
+      "kepid": 5542466,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005542466/kplr005542466-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00604.01",
+      "kepid": 3970233,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003970233/kplr003970233-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05605.01",
+      "kepid": 9047416,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009047416/kplr009047416-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01178.01",
+      "kepid": 3869825,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003869825/kplr003869825-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00121.01",
+      "kepid": 3247396,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003247396/kplr003247396-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04097.02",
+      "kepid": 5688683,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005688683/kplr005688683-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03671.01",
+      "kepid": 10383696,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0103/010383696/kplr010383696-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03049.01",
+      "kepid": 6263593,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006263593/kplr006263593-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04142.01",
+      "kepid": 9716302,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009716302/kplr009716302-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01995.01",
+      "kepid": 5942093,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005942093/kplr005942093-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05516.01",
+      "kepid": 8432034,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008432034/kplr008432034-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03649.01",
+      "kepid": 6066379,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006066379/kplr006066379-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03158.03",
+      "kepid": 6278762,
+      "reason": "Fewer than 200 clean observations in quarter"
+    },
+    {
+      "id": "K00824.01",
+      "kepid": 5164255,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005164255/kplr005164255-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06613.01",
+      "kepid": 5686974,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005686974/kplr005686974-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05353.01",
+      "kepid": 7107567,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0071/007107567/kplr007107567-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06081.01",
+      "kepid": 10727668,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0107/010727668/kplr010727668-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04699.01",
+      "kepid": 7891294,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007891294/kplr007891294-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06499.01",
+      "kepid": 5026187,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005026187/kplr005026187-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05582.01",
+      "kepid": 8904714,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008904714/kplr008904714-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01834.01",
+      "kepid": 5802478,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005802478/kplr005802478-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05463.01",
+      "kepid": 8029848,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008029848/kplr008029848-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06491.01",
+      "kepid": 5022440,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005022440/kplr005022440-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06555.01",
+      "kepid": 5288543,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005288543/kplr005288543-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04327.01",
+      "kepid": 5371777,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005371777/kplr005371777-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01692.01",
+      "kepid": 6616218,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006616218/kplr006616218-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03864.02",
+      "kepid": 4164922,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004164922/kplr004164922-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01616.01",
+      "kepid": 9015738,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009015738/kplr009015738-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06398.01",
+      "kepid": 4269252,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004269252/kplr004269252-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03008.01",
+      "kepid": 9070666,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009070666/kplr009070666-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03851.01",
+      "kepid": 9784230,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009784230/kplr009784230-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02793.01",
+      "kepid": 9823519,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009823519/kplr009823519-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03569.01",
+      "kepid": 6707942,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006707942/kplr006707942-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01182.01",
+      "kepid": 3865567,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003865567/kplr003865567-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00645.02",
+      "kepid": 5374854,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005374854/kplr005374854-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06024.01",
+      "kepid": 6191945,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006191945/kplr006191945-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06655.01",
+      "kepid": 6048106,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006048106/kplr006048106-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03875.01",
+      "kepid": 11911561,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0119/011911561/kplr011911561-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03638.01",
+      "kepid": 5181804,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005181804/kplr005181804-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05025.01",
+      "kepid": 3953106,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003953106/kplr003953106-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05733.01",
+      "kepid": 9911112,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0099/009911112/kplr009911112-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06023.01",
+      "kepid": 6182019,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006182019/kplr006182019-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03687.01",
+      "kepid": 2452440,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002452440/kplr002452440-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02649.01",
+      "kepid": 6842682,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0068/006842682/kplr006842682-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00446.01",
+      "kepid": 4633570,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004633570/kplr004633570-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00182.01",
+      "kepid": 5376836,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005376836/kplr005376836-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03777.01",
+      "kepid": 4075067,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004075067/kplr004075067-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07155.02",
+      "kepid": 9291368,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0092/009291368/kplr009291368-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00109.01",
+      "kepid": 4752451,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004752451/kplr004752451-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06393.01",
+      "kepid": 4174507,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004174507/kplr004174507-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05157.01",
+      "kepid": 5391911,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005391911/kplr005391911-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06344.01",
+      "kepid": 3556742,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003556742/kplr003556742-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00610.01",
+      "kepid": 5686174,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005686174/kplr005686174-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02942.01",
+      "kepid": 4385148,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004385148/kplr004385148-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02547.01",
+      "kepid": 4484336,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004484336/kplr004484336-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06386.01",
+      "kepid": 4078693,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004078693/kplr004078693-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01731.01",
+      "kepid": 8266276,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008266276/kplr008266276-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01541.01",
+      "kepid": 4840513,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004840513/kplr004840513-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07547.01",
+      "kepid": 4074294,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004074294/kplr004074294-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01323.01",
+      "kepid": 4076098,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004076098/kplr004076098-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03657.01",
+      "kepid": 4579321,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004579321/kplr004579321-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03721.01",
+      "kepid": 7763269,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007763269/kplr007763269-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04280.01",
+      "kepid": 5026326,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005026326/kplr005026326-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02369.01",
+      "kepid": 5602588,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005602588/kplr005602588-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00500.02",
+      "kepid": 4852528,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004852528/kplr004852528-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03859.01",
+      "kepid": 9692336,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009692336/kplr009692336-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03655.01",
+      "kepid": 8264097,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008264097/kplr008264097-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06349.01",
+      "kepid": 3656322,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003656322/kplr003656322-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06209.02",
+      "kepid": 9655711,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009655711/kplr009655711-2011177032512_llc.fits"
+    },
+    {
+      "id": "K08252.01",
+      "kepid": 5026023,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005026023/kplr005026023-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00284.01",
+      "kepid": 6021275,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006021275/kplr006021275-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01557.04",
+      "kepid": 5371776,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005371776/kplr005371776-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06314.01",
+      "kepid": 3245000,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003245000/kplr003245000-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03770.01",
+      "kepid": 5008245,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005008245/kplr005008245-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03763.01",
+      "kepid": 3114667,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003114667/kplr003114667-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02775.01",
+      "kepid": 6346809,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006346809/kplr006346809-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03290.01",
+      "kepid": 4936990,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004936990/kplr004936990-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00208.01",
+      "kepid": 3762468,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003762468/kplr003762468-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00230.01",
+      "kepid": 3862246,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003862246/kplr003862246-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05287.01",
+      "kepid": 6509282,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006509282/kplr006509282-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02932.01",
+      "kepid": 3861611,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003861611/kplr003861611-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07560.01",
+      "kepid": 5598645,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005598645/kplr005598645-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06790.01",
+      "kepid": 6929016,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006929016/kplr006929016-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00719.04",
+      "kepid": 9950612,
+      "reason": "Fewer than 200 clean observations in quarter"
+    },
+    {
+      "id": "K06670.01",
+      "kepid": 6152521,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006152521/kplr006152521-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03713.01",
+      "kepid": 8127648,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008127648/kplr008127648-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02141.01",
+      "kepid": 3764879,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003764879/kplr003764879-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06682.01",
+      "kepid": 6283224,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006283224/kplr006283224-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03949.01",
+      "kepid": 5598595,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005598595/kplr005598595-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05543.01",
+      "kepid": 8560475,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0085/008560475/kplr008560475-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04775.01",
+      "kepid": 8626325,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008626325/kplr008626325-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06419.01",
+      "kepid": 4484312,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004484312/kplr004484312-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02817.01",
+      "kepid": 7605093,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0076/007605093/kplr007605093-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06350.01",
+      "kepid": 3656700,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003656700/kplr003656700-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01930.04",
+      "kepid": 5511081,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005511081/kplr005511081-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07071.01",
+      "kepid": 8621026,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008621026/kplr008621026-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01580.01",
+      "kepid": 5193400,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005193400/kplr005193400-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00832.01",
+      "kepid": 5372966,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005372966/kplr005372966-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03654.01",
+      "kepid": 6960446,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006960446/kplr006960446-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00004.01",
+      "kepid": 3861595,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003861595/kplr003861595-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02667.01",
+      "kepid": 3654095,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003654095/kplr003654095-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06407.01",
+      "kepid": 4367544,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004367544/kplr004367544-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06446.01",
+      "kepid": 4757331,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004757331/kplr004757331-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02045.02",
+      "kepid": 6026438,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006026438/kplr006026438-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02138.01",
+      "kepid": 5022828,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005022828/kplr005022828-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03706.01",
+      "kepid": 7770471,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007770471/kplr007770471-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00505.01",
+      "kepid": 5689351,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005689351/kplr005689351-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03268.01",
+      "kepid": 8379021,
+      "reason": "Less than 25% local phase-bin coverage."
+    },
+    {
+      "id": "K00006.01",
+      "kepid": 3248033,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003248033/kplr003248033-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02239.01",
+      "kepid": 4077901,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004077901/kplr004077901-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06271.01",
+      "kepid": 2438062,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002438062/kplr002438062-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00816.01",
+      "kepid": 4664847,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004664847/kplr004664847-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03630.01",
+      "kepid": 10259029,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010259029/kplr010259029-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03764.01",
+      "kepid": 3344427,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003344427/kplr003344427-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03659.01",
+      "kepid": 4386047,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004386047/kplr004386047-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06751.02",
+      "kepid": 6665064,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006665064/kplr006665064-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00190.01",
+      "kepid": 5771719,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005771719/kplr005771719-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02854.01",
+      "kepid": 5513866,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005513866/kplr005513866-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07694.01",
+      "kepid": 4386607,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004386607/kplr004386607-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05206.01",
+      "kepid": 5858519,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005858519/kplr005858519-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02944.01",
+      "kepid": 6781548,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006781548/kplr006781548-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04950.01",
+      "kepid": 2707916,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0027/002707916/kplr002707916-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06347.01",
+      "kepid": 3644174,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003644174/kplr003644174-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03629.01",
+      "kepid": 3544694,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003544694/kplr003544694-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02041.01",
+      "kepid": 5024482,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024482/kplr005024482-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06754.01",
+      "kepid": 6672229,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006672229/kplr006672229-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01811.01",
+      "kepid": 3966262,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003966262/kplr003966262-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03751.01",
+      "kepid": 9053086,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009053086/kplr009053086-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06774.01",
+      "kepid": 6842345,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0068/006842345/kplr006842345-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03982.01",
+      "kepid": 5303557,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005303557/kplr005303557-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05999.01",
+      "kepid": 5254230,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005254230/kplr005254230-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04573.01",
+      "kepid": 4848321,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004848321/kplr004848321-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02986.01",
+      "kepid": 4568298,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004568298/kplr004568298-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01231.02",
+      "kepid": 6462874,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006462874/kplr006462874-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06979.01",
+      "kepid": 8155584,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008155584/kplr008155584-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06145.03",
+      "kepid": 6221385,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006221385/kplr006221385-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05032.01",
+      "kepid": 3973549,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003973549/kplr003973549-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03516.01",
+      "kepid": 9658118,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009658118/kplr009658118-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05275.01",
+      "kepid": 6367663,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006367663/kplr006367663-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00661.01",
+      "kepid": 6347299,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006347299/kplr006347299-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06959.01",
+      "kepid": 8088354,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008088354/kplr008088354-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01319.01",
+      "kepid": 4078157,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004078157/kplr004078157-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04713.01",
+      "kepid": 5253802,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005253802/kplr005253802-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00827.01",
+      "kepid": 5283542,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005283542/kplr005283542-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04290.01",
+      "kepid": 5868793,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005868793/kplr005868793-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03925.01",
+      "kepid": 10788461,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0107/010788461/kplr010788461-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00825.01",
+      "kepid": 5252423,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005252423/kplr005252423-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06420.01",
+      "kepid": 4484356,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004484356/kplr004484356-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03960.01",
+      "kepid": 7777416,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007777416/kplr007777416-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00551.02",
+      "kepid": 4270253,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004270253/kplr004270253-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02991.01",
+      "kepid": 4848424,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004848424/kplr004848424-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06456.01",
+      "kepid": 4839180,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004839180/kplr004839180-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03633.01",
+      "kepid": 11858741,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0118/011858741/kplr011858741-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00169.01",
+      "kepid": 6185711,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006185711/kplr006185711-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06088.01",
+      "kepid": 11756821,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0117/011756821/kplr011756821-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02380.01",
+      "kepid": 3002478,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0030/003002478/kplr003002478-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06803.01",
+      "kepid": 7025851,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007025851/kplr007025851-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06625.01",
+      "kepid": 5771589,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005771589/kplr005771589-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01213.01",
+      "kepid": 3556220,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003556220/kplr003556220-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02704.02",
+      "kepid": 9730163,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009730163/kplr009730163-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02926.01",
+      "kepid": 10122538,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0101/010122538/kplr010122538-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02337.01",
+      "kepid": 5599774,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005599774/kplr005599774-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03804.01",
+      "kepid": 7831363,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007831363/kplr007831363-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06702.01",
+      "kepid": 6421188,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006421188/kplr006421188-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05115.01",
+      "kepid": 5016163,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005016163/kplr005016163-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03918.01",
+      "kepid": 3124420,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003124420/kplr003124420-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06025.01",
+      "kepid": 6209347,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006209347/kplr006209347-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06579.01",
+      "kepid": 5456979,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005456979/kplr005456979-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03634.01",
+      "kepid": 6363494,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006363494/kplr006363494-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03745.01",
+      "kepid": 2437783,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002437783/kplr002437783-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03802.01",
+      "kepid": 5020044,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005020044/kplr005020044-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03621.01",
+      "kepid": 9775253,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009775253/kplr009775253-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06412.01",
+      "kepid": 4380283,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004380283/kplr004380283-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05742.01",
+      "kepid": 9954225,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0099/009954225/kplr009954225-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03747.01",
+      "kepid": 9777087,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009777087/kplr009777087-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06099.01",
+      "kepid": 3003991,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0030/003003991/kplr003003991-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02731.01",
+      "kepid": 4072333,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004072333/kplr004072333-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00852.01",
+      "kepid": 6422070,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006422070/kplr006422070-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05013.01",
+      "kepid": 3846515,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003846515/kplr003846515-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01039.01",
+      "kepid": 5802486,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005802486/kplr005802486-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01662.01",
+      "kepid": 4844004,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004844004/kplr004844004-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04067.01",
+      "kepid": 5530112,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005530112/kplr005530112-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03041.01",
+      "kepid": 4072955,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004072955/kplr004072955-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04315.01",
+      "kepid": 10342248,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0103/010342248/kplr010342248-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05485.01",
+      "kepid": 8197176,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008197176/kplr008197176-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00844.01",
+      "kepid": 6022556,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006022556/kplr006022556-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01843.01",
+      "kepid": 5080636,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005080636/kplr005080636-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07114.01",
+      "kepid": 8953475,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008953475/kplr008953475-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02904.01",
+      "kepid": 3969687,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003969687/kplr003969687-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01194.03",
+      "kepid": 3554031,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003554031/kplr003554031-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06580.01",
+      "kepid": 5460835,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005460835/kplr005460835-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07947.01",
+      "kepid": 9592831,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009592831/kplr009592831-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03126.01",
+      "kepid": 7097534,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007097534/kplr007097534-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00302.01",
+      "kepid": 3662838,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003662838/kplr003662838-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06135.01",
+      "kepid": 5768927,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005768927/kplr005768927-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02951.01",
+      "kepid": 4991208,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004991208/kplr004991208-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02148.02",
+      "kepid": 6021193,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006021193/kplr006021193-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05280.01",
+      "kepid": 6387887,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006387887/kplr006387887-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05719.01",
+      "kepid": 9839030,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009839030/kplr009839030-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07693.01",
+      "kepid": 4384909,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004384909/kplr004384909-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02660.01",
+      "kepid": 9893318,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009893318/kplr009893318-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01839.01",
+      "kepid": 5856571,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005856571/kplr005856571-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03636.01",
+      "kepid": 5649206,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005649206/kplr005649206-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02499.01",
+      "kepid": 5544903,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005544903/kplr005544903-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01203.02",
+      "kepid": 3962243,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003962243/kplr003962243-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05544.01",
+      "kepid": 8561192,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0085/008561192/kplr008561192-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00508.01",
+      "kepid": 6266741,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006266741/kplr006266741-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01923.01",
+      "kepid": 4989057,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004989057/kplr004989057-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03924.01",
+      "kepid": 1433980,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0014/001433980/kplr001433980-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03212.01",
+      "kepid": 4927734,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004927734/kplr004927734-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07730.01",
+      "kepid": 5512513,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005512513/kplr005512513-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06475.01",
+      "kepid": 4939265,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004939265/kplr004939265-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06882.01",
+      "kepid": 7461521,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0074/007461521/kplr007461521-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03324.01",
+      "kepid": 4271474,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004271474/kplr004271474-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04072.01",
+      "kepid": 6755944,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006755944/kplr006755944-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00996.01",
+      "kepid": 3858824,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858824/kplr003858824-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06352.01",
+      "kepid": 3663494,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003663494/kplr003663494-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00697.01",
+      "kepid": 8878187,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0088/008878187/kplr008878187-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01932.01",
+      "kepid": 5202905,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005202905/kplr005202905-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02274.01",
+      "kepid": 7960980,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0079/007960980/kplr007960980-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07762.01",
+      "kepid": 6106046,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006106046/kplr006106046-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03844.01",
+      "kepid": 7174349,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0071/007174349/kplr007174349-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07555.01",
+      "kepid": 5024414,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024414/kplr005024414-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04211.01",
+      "kepid": 5078025,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005078025/kplr005078025-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02055.01",
+      "kepid": 3128552,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003128552/kplr003128552-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03138.01",
+      "kepid": 6444896,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006444896/kplr006444896-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01983.01",
+      "kepid": 12691412,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0126/012691412/kplr012691412-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01179.01",
+      "kepid": 3655332,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003655332/kplr003655332-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06433.01",
+      "kepid": 4665989,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004665989/kplr004665989-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06418.01",
+      "kepid": 4482738,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004482738/kplr004482738-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03119.01",
+      "kepid": 5551672,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005551672/kplr005551672-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03793.01",
+      "kepid": 4037163,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004037163/kplr004037163-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03895.01",
+      "kepid": 12106934,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0121/012106934/kplr012106934-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06671.01",
+      "kepid": 6185717,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006185717/kplr006185717-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07675.01",
+      "kepid": 3859042,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003859042/kplr003859042-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04390.01",
+      "kepid": 8330207,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008330207/kplr008330207-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04612.01",
+      "kepid": 8044600,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008044600/kplr008044600-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03623.01",
+      "kepid": 7732791,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007732791/kplr007732791-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06476.01",
+      "kepid": 4940201,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004940201/kplr004940201-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02136.01",
+      "kepid": 5288570,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005288570/kplr005288570-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06510.01",
+      "kepid": 5080652,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005080652/kplr005080652-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04829.01",
+      "kepid": 12401132,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0124/012401132/kplr012401132-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00395.01",
+      "kepid": 4165960,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004165960/kplr004165960-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04057.01",
+      "kepid": 3757407,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003757407/kplr003757407-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04178.01",
+      "kepid": 5197233,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005197233/kplr005197233-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04541.01",
+      "kepid": 5511659,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005511659/kplr005511659-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03378.01",
+      "kepid": 4376629,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004376629/kplr004376629-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05267.01",
+      "kepid": 6350031,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006350031/kplr006350031-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06628.01",
+      "kepid": 5802470,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005802470/kplr005802470-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03707.01",
+      "kepid": 5130380,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005130380/kplr005130380-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07069.01",
+      "kepid": 8613446,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008613446/kplr008613446-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07182.01",
+      "kepid": 9513168,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009513168/kplr009513168-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06493.01",
+      "kepid": 5024126,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024126/kplr005024126-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05672.01",
+      "kepid": 9418508,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0094/009418508/kplr009418508-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02785.01",
+      "kepid": 10001368,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0100/010001368/kplr010001368-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03788.01",
+      "kepid": 9405541,
+      "reason": "Fewer than 200 clean observations in quarter"
+    },
+    {
+      "id": "K05054.01",
+      "kepid": 4276114,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004276114/kplr004276114-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04452.01",
+      "kepid": 4474462,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004474462/kplr004474462-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01214.01",
+      "kepid": 3660924,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003660924/kplr003660924-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05127.01",
+      "kepid": 5113146,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005113146/kplr005113146-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01189.01",
+      "kepid": 3765771,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003765771/kplr003765771-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02411.01",
+      "kepid": 8073806,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008073806/kplr008073806-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06196.01",
+      "kepid": 9282687,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0092/009282687/kplr009282687-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01205.01",
+      "kepid": 3869014,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003869014/kplr003869014-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07023.01",
+      "kepid": 8362974,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008362974/kplr008362974-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06818.01",
+      "kepid": 7097571,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007097571/kplr007097571-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03883.01",
+      "kepid": 9592850,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009592850/kplr009592850-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03790.01",
+      "kepid": 7296094,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0072/007296094/kplr007296094-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01119.02",
+      "kepid": 3003992,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0030/003003992/kplr003003992-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03152.01",
+      "kepid": 6504534,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006504534/kplr006504534-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03755.01",
+      "kepid": 9896435,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009896435/kplr009896435-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03662.01",
+      "kepid": 12459731,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0124/012459731/kplr012459731-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00612.01",
+      "kepid": 6587002,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006587002/kplr006587002-2011177032512_llc.fits"
+    },
+    {
+      "id": "K08257.01",
+      "kepid": 5683219,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005683219/kplr005683219-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03688.01",
+      "kepid": 5020034,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005020034/kplr005020034-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03855.01",
+      "kepid": 2558370,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0025/002558370/kplr002558370-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00566.02",
+      "kepid": 7119481,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0071/007119481/kplr007119481-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03797.01",
+      "kepid": 5546277,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005546277/kplr005546277-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03977.01",
+      "kepid": 3245661,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003245661/kplr003245661-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03591.01",
+      "kepid": 6182846,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006182846/kplr006182846-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02364.01",
+      "kepid": 9532710,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009532710/kplr009532710-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06646.01",
+      "kepid": 6019971,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006019971/kplr006019971-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02869.01",
+      "kepid": 7767162,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007767162/kplr007767162-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06460.01",
+      "kepid": 4851217,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004851217/kplr004851217-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04884.01",
+      "kepid": 4750341,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004750341/kplr004750341-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03691.01",
+      "kepid": 4751083,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004751083/kplr004751083-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06473.01",
+      "kepid": 4931073,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004931073/kplr004931073-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04642.01",
+      "kepid": 4664743,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004664743/kplr004664743-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06053.01",
+      "kepid": 8167978,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008167978/kplr008167978-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06462.01",
+      "kepid": 4851356,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004851356/kplr004851356-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00674.01",
+      "kepid": 7277317,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0072/007277317/kplr007277317-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02754.01",
+      "kepid": 10905911,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0109/010905911/kplr010905911-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03773.01",
+      "kepid": 10268903,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010268903/kplr010268903-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06672.01",
+      "kepid": 6187508,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006187508/kplr006187508-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03944.01",
+      "kepid": 4864734,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004864734/kplr004864734-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04947.01",
+      "kepid": 2574543,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0025/002574543/kplr002574543-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05615.01",
+      "kepid": 9108058,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0091/009108058/kplr009108058-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06522.01",
+      "kepid": 5112198,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005112198/kplr005112198-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03712.01",
+      "kepid": 2437060,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002437060/kplr002437060-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02034.01",
+      "kepid": 3657758,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003657758/kplr003657758-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03424.01",
+      "kepid": 8356054,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008356054/kplr008356054-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02560.01",
+      "kepid": 4670217,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004670217/kplr004670217-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06400.01",
+      "kepid": 4281895,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004281895/kplr004281895-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07397.01",
+      "kepid": 10989032,
+      "reason": "HTTPSConnectionPool(host='stpubdata.s3.amazonaws.com', port=443): Read timed out."
+    },
+    {
+      "id": "K02668.01",
+      "kepid": 5513012,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005513012/kplr005513012-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00453.01",
+      "kepid": 6758917,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006758917/kplr006758917-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06789.01",
+      "kepid": 6927629,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006927629/kplr006927629-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06104.01",
+      "kepid": 3761319,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003761319/kplr003761319-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02345.01",
+      "kepid": 5629538,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005629538/kplr005629538-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00835.01",
+      "kepid": 5456651,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005456651/kplr005456651-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03323.01",
+      "kepid": 5193659,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005193659/kplr005193659-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07623.01",
+      "kepid": 1434395,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0014/001434395/kplr001434395-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02336.01",
+      "kepid": 6142862,
+      "reason": "HTTPSConnectionPool(host='stpubdata.s3.amazonaws.com', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "id": "K02876.01",
+      "kepid": 4367854,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004367854/kplr004367854-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04688.01",
+      "kepid": 4851145,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004851145/kplr004851145-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00654.02",
+      "kepid": 5941160,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005941160/kplr005941160-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07205.01",
+      "kepid": 9635520,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009635520/kplr009635520-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05662.01",
+      "kepid": 9390655,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0093/009390655/kplr009390655-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00657.02",
+      "kepid": 6020753,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006020753/kplr006020753-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03702.01",
+      "kepid": 2449090,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002449090/kplr002449090-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00803.01",
+      "kepid": 3554600,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003554600/kplr003554600-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06247.01",
+      "kepid": 11867071,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0118/011867071/kplr011867071-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03682.01",
+      "kepid": 8621353,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0086/008621353/kplr008621353-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07011.01",
+      "kepid": 8294484,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008294484/kplr008294484-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06866.01",
+      "kepid": 7365447,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0073/007365447/kplr007365447-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06752.01",
+      "kepid": 6670610,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006670610/kplr006670610-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03694.01",
+      "kepid": 6200709,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006200709/kplr006200709-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00257.01",
+      "kepid": 5514383,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005514383/kplr005514383-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05512.01",
+      "kepid": 8396288,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008396288/kplr008396288-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03492.01",
+      "kepid": 5193077,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005193077/kplr005193077-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07728.01",
+      "kepid": 5456319,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005456319/kplr005456319-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07964.01",
+      "kepid": 9813678,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009813678/kplr009813678-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03964.01",
+      "kepid": 9957351,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0099/009957351/kplr009957351-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06043.01",
+      "kepid": 7777397,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007777397/kplr007777397-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04279.01",
+      "kepid": 5876360,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005876360/kplr005876360-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06408.01",
+      "kepid": 4372410,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004372410/kplr004372410-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06095.01",
+      "kepid": 2707097,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0027/002707097/kplr002707097-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05190.01",
+      "kepid": 5653163,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005653163/kplr005653163-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01757.01",
+      "kepid": 4851464,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004851464/kplr004851464-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06680.01",
+      "kepid": 6265961,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006265961/kplr006265961-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04411.01",
+      "kepid": 5281113,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005281113/kplr005281113-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03849.01",
+      "kepid": 8949316,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008949316/kplr008949316-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03388.01",
+      "kepid": 3858988,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858988/kplr003858988-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06601.01",
+      "kepid": 5597361,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005597361/kplr005597361-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03249.01",
+      "kepid": 9083564,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009083564/kplr009083564-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03600.01",
+      "kepid": 9529733,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009529733/kplr009529733-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05245.01",
+      "kepid": 6184894,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006184894/kplr006184894-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07663.01",
+      "kepid": 3663141,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003663141/kplr003663141-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02608.01",
+      "kepid": 6269070,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006269070/kplr006269070-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01744.01",
+      "kepid": 6364327,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006364327/kplr006364327-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01615.01",
+      "kepid": 4278221,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004278221/kplr004278221-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02451.01",
+      "kepid": 6500206,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006500206/kplr006500206-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00233.01",
+      "kepid": 5023956,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005023956/kplr005023956-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04736.01",
+      "kepid": 5282477,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005282477/kplr005282477-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00144.01",
+      "kepid": 4180280,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004180280/kplr004180280-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01578.01",
+      "kepid": 5629985,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005629985/kplr005629985-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04398.01",
+      "kepid": 5802637,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005802637/kplr005802637-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06486.01",
+      "kepid": 5017058,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005017058/kplr005017058-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03081.01",
+      "kepid": 3654719,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003654719/kplr003654719-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07855.01",
+      "kepid": 7891264,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007891264/kplr007891264-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02448.01",
+      "kepid": 5857540,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005857540/kplr005857540-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05875.01",
+      "kepid": 11176166,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0111/011176166/kplr011176166-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07331.01",
+      "kepid": 10468514,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010468514/kplr010468514-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04376.01",
+      "kepid": 2570773,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0025/002570773/kplr002570773-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00502.01",
+      "kepid": 5282051,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005282051/kplr005282051-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03242.01",
+      "kepid": 6928906,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006928906/kplr006928906-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03451.01",
+      "kepid": 10793576,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0107/010793576/kplr010793576-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07197.01",
+      "kepid": 9596064,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009596064/kplr009596064-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01210.01",
+      "kepid": 3962357,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003962357/kplr003962357-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06014.01",
+      "kepid": 5597970,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005597970/kplr005597970-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02709.01",
+      "kepid": 4180401,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004180401/kplr004180401-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03618.01",
+      "kepid": 9636559,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009636559/kplr009636559-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00814.01",
+      "kepid": 4476123,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004476123/kplr004476123-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04474.01",
+      "kepid": 4381429,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004381429/kplr004381429-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06437.01",
+      "kepid": 4725292,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004725292/kplr004725292-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00660.01",
+      "kepid": 6267535,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006267535/kplr006267535-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05728.01",
+      "kepid": 9896438,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009896438/kplr009896438-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00412.01",
+      "kepid": 5683743,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005683743/kplr005683743-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03754.01",
+      "kepid": 8937019,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008937019/kplr008937019-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07801.01",
+      "kepid": 7013923,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007013923/kplr007013923-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02773.01",
+      "kepid": 3130548,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003130548/kplr003130548-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05028.01",
+      "kepid": 3962728,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003962728/kplr003962728-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01671.01",
+      "kepid": 5195172,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005195172/kplr005195172-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01759.01",
+      "kepid": 3248019,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003248019/kplr003248019-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06052.01",
+      "kepid": 8167938,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008167938/kplr008167938-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04119.01",
+      "kepid": 5513857,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005513857/kplr005513857-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04018.01",
+      "kepid": 4929299,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004929299/kplr004929299-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06581.01",
+      "kepid": 5462901,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005462901/kplr005462901-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02249.01",
+      "kepid": 4761060,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004761060/kplr004761060-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02052.01",
+      "kepid": 3248501,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003248501/kplr003248501-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03837.01",
+      "kepid": 9761573,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009761573/kplr009761573-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07768.01",
+      "kepid": 6187888,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006187888/kplr006187888-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06067.01",
+      "kepid": 9411317,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0094/009411317/kplr009411317-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06703.01",
+      "kepid": 6421483,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006421483/kplr006421483-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06094.01",
+      "kepid": 2161623,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0021/002161623/kplr002161623-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02031.01",
+      "kepid": 5940165,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005940165/kplr005940165-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01211.01",
+      "kepid": 3858704,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858704/kplr003858704-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02857.01",
+      "kepid": 6345732,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006345732/kplr006345732-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03124.01",
+      "kepid": 4076976,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004076976/kplr004076976-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00397.01",
+      "kepid": 4376644,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004376644/kplr004376644-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01668.01",
+      "kepid": 5103942,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005103942/kplr005103942-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06021.01",
+      "kepid": 6146418,
+      "reason": "HTTPSConnectionPool(host='stpubdata.s3.amazonaws.com', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "id": "K00560.01",
+      "kepid": 6501635,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006501635/kplr006501635-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04352.01",
+      "kepid": 2708221,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0027/002708221/kplr002708221-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03004.02",
+      "kepid": 6103377,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006103377/kplr006103377-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07973.01",
+      "kepid": 9899345,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009899345/kplr009899345-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05992.01",
+      "kepid": 3971315,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003971315/kplr003971315-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06382.01",
+      "kepid": 4069213,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004069213/kplr004069213-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00833.01",
+      "kepid": 5376067,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005376067/kplr005376067-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03082.01",
+      "kepid": 10619142,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0106/010619142/kplr010619142-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03784.01",
+      "kepid": 5688997,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005688997/kplr005688997-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06445.01",
+      "kepid": 4753988,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004753988/kplr004753988-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07993.01",
+      "kepid": 10219288,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010219288/kplr010219288-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04761.01",
+      "kepid": 3859151,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003859151/kplr003859151-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03598.01",
+      "kepid": 2437149,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002437149/kplr002437149-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06132.02",
+      "kepid": 5629353,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005629353/kplr005629353-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02997.01",
+      "kepid": 9777256,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009777256/kplr009777256-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06434.01",
+      "kepid": 4671584,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004671584/kplr004671584-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00224.01",
+      "kepid": 5547480,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005547480/kplr005547480-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01325.01",
+      "kepid": 4282872,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004282872/kplr004282872-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06773.01",
+      "kepid": 6841577,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0068/006841577/kplr006841577-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00577.02",
+      "kepid": 8558011,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0085/008558011/kplr008558011-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01317.01",
+      "kepid": 4275739,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004275739/kplr004275739-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03631.01",
+      "kepid": 8299947,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008299947/kplr008299947-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06424.01",
+      "kepid": 4565985,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004565985/kplr004565985-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02695.01",
+      "kepid": 5196864,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005196864/kplr005196864-2011271113734_llc.fits"
+    },
+    {
+      "id": "K08243.01",
+      "kepid": 3662635,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003662635/kplr003662635-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07113.01",
+      "kepid": 8953426,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008953426/kplr008953426-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02819.01",
+      "kepid": 4270565,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004270565/kplr004270565-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01602.01",
+      "kepid": 4860678,
+      "reason": "HTTPSConnectionPool(host='stpubdata.s3.amazonaws.com', port=443): Read timed out."
+    },
+    {
+      "id": "K03743.01",
+      "kepid": 4935914,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004935914/kplr004935914-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06317.01",
+      "kepid": 3248332,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003248332/kplr003248332-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02962.01",
+      "kepid": 4935172,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004935172/kplr004935172-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01760.01",
+      "kepid": 3967760,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003967760/kplr003967760-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06474.01",
+      "kepid": 4932691,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004932691/kplr004932691-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05020.01",
+      "kepid": 3859890,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003859890/kplr003859890-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06377.01",
+      "kepid": 3973504,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003973504/kplr003973504-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06448.01",
+      "kepid": 4758368,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004758368/kplr004758368-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07898.01",
+      "kepid": 8565912,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0085/008565912/kplr008565912-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01336.01",
+      "kepid": 4077526,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004077526/kplr004077526-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04508.01",
+      "kepid": 5457326,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005457326/kplr005457326-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06431.01",
+      "kepid": 4633434,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004633434/kplr004633434-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02393.02",
+      "kepid": 4665571,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004665571/kplr004665571-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03108.01",
+      "kepid": 3756264,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003756264/kplr003756264-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02084.01",
+      "kepid": 3967326,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003967326/kplr003967326-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05403.01",
+      "kepid": 7599004,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0075/007599004/kplr007599004-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00606.01",
+      "kepid": 5014753,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005014753/kplr005014753-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06540.01",
+      "kepid": 5199978,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005199978/kplr005199978-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06427.01",
+      "kepid": 4574310,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004574310/kplr004574310-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02341.01",
+      "kepid": 10232693,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010232693/kplr010232693-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05100.01",
+      "kepid": 4914399,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004914399/kplr004914399-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04572.01",
+      "kepid": 6929285,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006929285/kplr006929285-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06330.01",
+      "kepid": 3352751,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003352751/kplr003352751-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07378.01",
+      "kepid": 10843431,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0108/010843431/kplr010843431-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01322.01",
+      "kepid": 4079535,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004079535/kplr004079535-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03612.01",
+      "kepid": 10518735,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0105/010518735/kplr010518735-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01318.01",
+      "kepid": 4070376,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004070376/kplr004070376-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06153.01",
+      "kepid": 7108433,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0071/007108433/kplr007108433-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06055.01",
+      "kepid": 8230809,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0082/008230809/kplr008230809-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03939.01",
+      "kepid": 9593528,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009593528/kplr009593528-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03730.01",
+      "kepid": 10879213,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0108/010879213/kplr010879213-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04811.01",
+      "kepid": 8811490,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0088/008811490/kplr008811490-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03442.01",
+      "kepid": 9837586,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009837586/kplr009837586-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04332.01",
+      "kepid": 8953414,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008953414/kplr008953414-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06627.01",
+      "kepid": 5802285,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005802285/kplr005802285-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06026.01",
+      "kepid": 6268722,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006268722/kplr006268722-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06375.01",
+      "kepid": 3972432,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003972432/kplr003972432-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02850.01",
+      "kepid": 4075015,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004075015/kplr004075015-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03765.01",
+      "kepid": 12109845,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0121/012109845/kplr012109845-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03942.01",
+      "kepid": 6019872,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006019872/kplr006019872-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06193.01",
+      "kepid": 9119652,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0091/009119652/kplr009119652-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02172.01",
+      "kepid": 4173026,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004173026/kplr004173026-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04587.01",
+      "kepid": 5687700,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005687700/kplr005687700-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00689.01",
+      "kepid": 8361905,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008361905/kplr008361905-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00802.01",
+      "kepid": 3453214,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0034/003453214/kplr003453214-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00557.01",
+      "kepid": 5774349,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005774349/kplr005774349-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03293.01",
+      "kepid": 3858851,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858851/kplr003858851-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02540.01",
+      "kepid": 3001885,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0030/003001885/kplr003001885-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06385.01",
+      "kepid": 4076952,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004076952/kplr004076952-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02715.02",
+      "kepid": 9837661,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009837661/kplr009837661-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03810.01",
+      "kepid": 5769943,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005769943/kplr005769943-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06402.01",
+      "kepid": 4284147,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004284147/kplr004284147-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00862.01",
+      "kepid": 6756669,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006756669/kplr006756669-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06834.01",
+      "kepid": 7132015,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0071/007132015/kplr007132015-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03725.01",
+      "kepid": 3459199,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0034/003459199/kplr003459199-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02083.01",
+      "kepid": 7097965,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007097965/kplr007097965-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04044.01",
+      "kepid": 5201115,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005201115/kplr005201115-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03749.01",
+      "kepid": 11547869,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0115/011547869/kplr011547869-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02930.01",
+      "kepid": 4664046,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0046/004664046/kplr004664046-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05688.01",
+      "kepid": 9532603,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009532603/kplr009532603-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01678.01",
+      "kepid": 5527172,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005527172/kplr005527172-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01635.01",
+      "kepid": 10487119,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010487119/kplr010487119-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05072.01",
+      "kepid": 4570555,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004570555/kplr004570555-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03226.01",
+      "kepid": 5544450,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005544450/kplr005544450-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03807.01",
+      "kepid": 10581918,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0105/010581918/kplr010581918-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03800.01",
+      "kepid": 9593759,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009593759/kplr009593759-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03963.01",
+      "kepid": 3764714,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003764714/kplr003764714-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00801.01",
+      "kepid": 3351888,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003351888/kplr003351888-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00828.01",
+      "kepid": 5287983,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005287983/kplr005287983-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07826.01",
+      "kepid": 7203326,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0072/007203326/kplr007203326-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02175.01",
+      "kepid": 9022166,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0090/009022166/kplr009022166-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07668.01",
+      "kepid": 3762750,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003762750/kplr003762750-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03679.01",
+      "kepid": 5021174,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005021174/kplr005021174-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06380.01",
+      "kepid": 4067549,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004067549/kplr004067549-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06358.01",
+      "kepid": 3765692,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003765692/kplr003765692-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01191.01",
+      "kepid": 3859628,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003859628/kplr003859628-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06916.01",
+      "kepid": 7777365,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007777365/kplr007777365-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00663.02",
+      "kepid": 6425957,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006425957/kplr006425957-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02289.02",
+      "kepid": 3867615,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003867615/kplr003867615-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07662.01",
+      "kepid": 3660581,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003660581/kplr003660581-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03512.01",
+      "kepid": 6182849,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006182849/kplr006182849-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02279.01",
+      "kepid": 3661886,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003661886/kplr003661886-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07361.01",
+      "kepid": 10680424,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0106/010680424/kplr010680424-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04813.01",
+      "kepid": 4840672,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004840672/kplr004840672-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06211.01",
+      "kepid": 9767392,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009767392/kplr009767392-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05991.01",
+      "kepid": 3869326,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003869326/kplr003869326-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04762.01",
+      "kepid": 7098255,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007098255/kplr007098255-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06130.01",
+      "kepid": 5428657,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005428657/kplr005428657-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03647.01",
+      "kepid": 9661869,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009661869/kplr009661869-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05831.01",
+      "kepid": 10813078,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0108/010813078/kplr010813078-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00094.04",
+      "kepid": 6462863,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006462863/kplr006462863-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03735.01",
+      "kepid": 2166200,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0021/002166200/kplr002166200-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02531.01",
+      "kepid": 4172746,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004172746/kplr004172746-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06683.01",
+      "kepid": 6285094,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006285094/kplr006285094-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06631.01",
+      "kepid": 5860347,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0058/005860347/kplr005860347-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02229.01",
+      "kepid": 4473226,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004473226/kplr004473226-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00857.02",
+      "kepid": 6587280,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006587280/kplr006587280-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03689.01",
+      "kepid": 7017372,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007017372/kplr007017372-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03785.01",
+      "kepid": 4073730,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004073730/kplr004073730-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04913.02",
+      "kepid": 5769810,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005769810/kplr005769810-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03144.01",
+      "kepid": 5688790,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005688790/kplr005688790-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06139.01",
+      "kepid": 5952403,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005952403/kplr005952403-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03686.01",
+      "kepid": 9719636,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009719636/kplr009719636-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07313.01",
+      "kepid": 10341787,
+      "reason": "Fewer than 200 clean observations in quarter"
+    },
+    {
+      "id": "K04683.01",
+      "kepid": 4843592,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004843592/kplr004843592-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02885.01",
+      "kepid": 11100670,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0111/011100670/kplr011100670-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06351.01",
+      "kepid": 3659940,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003659940/kplr003659940-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01455.01",
+      "kepid": 4760746,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004760746/kplr004760746-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04814.01",
+      "kepid": 9777556,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009777556/kplr009777556-2011177032512_llc.fits"
+    },
+    {
+      "id": "K08011.01",
+      "kepid": 10407191,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010407191/kplr010407191-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03756.01",
+      "kepid": 10352938,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0103/010352938/kplr010352938-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07645.01",
+      "kepid": 3129238,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003129238/kplr003129238-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00626.01",
+      "kepid": 4478168,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004478168/kplr004478168-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01613.03",
+      "kepid": 6268648,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006268648/kplr006268648-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06221.01",
+      "kepid": 10357831,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0103/010357831/kplr010357831-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06359.01",
+      "kepid": 3766353,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003766353/kplr003766353-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03294.01",
+      "kepid": 3858917,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858917/kplr003858917-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06524.01",
+      "kepid": 5115178,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005115178/kplr005115178-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02690.01",
+      "kepid": 5369827,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005369827/kplr005369827-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02297.01",
+      "kepid": 5342473,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005342473/kplr005342473-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02705.01",
+      "kepid": 11453592,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0114/011453592/kplr011453592-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05090.01",
+      "kepid": 4815612,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004815612/kplr004815612-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05990.01",
+      "kepid": 3858919,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858919/kplr003858919-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01924.01",
+      "kepid": 5108214,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005108214/kplr005108214-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06508.01",
+      "kepid": 5078879,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005078879/kplr005078879-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00492.01",
+      "kepid": 3559935,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003559935/kplr003559935-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06051.01",
+      "kepid": 8153568,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008153568/kplr008153568-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03780.01",
+      "kepid": 6775985,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0067/006775985/kplr006775985-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05584.01",
+      "kepid": 8935352,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008935352/kplr008935352-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03628.01",
+      "kepid": 3542574,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003542574/kplr003542574-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05339.01",
+      "kepid": 6948815,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006948815/kplr006948815-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06364.01",
+      "kepid": 3836439,
+      "reason": "Fewer than 200 clean observations in quarter"
+    },
+    {
+      "id": "K02987.01",
+      "kepid": 4374339,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004374339/kplr004374339-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06591.01",
+      "kepid": 5513833,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005513833/kplr005513833-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06227.01",
+      "kepid": 10614158,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0106/010614158/kplr010614158-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03566.01",
+      "kepid": 7898576,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007898576/kplr007898576-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04522.01",
+      "kepid": 9577855,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009577855/kplr009577855-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02774.01",
+      "kepid": 9593757,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009593757/kplr009593757-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05093.01",
+      "kepid": 4840327,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004840327/kplr004840327-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05007.01",
+      "kepid": 3758499,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003758499/kplr003758499-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04294.01",
+      "kepid": 7681230,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0076/007681230/kplr007681230-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01544.01",
+      "kepid": 5024450,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024450/kplr005024450-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02998.01",
+      "kepid": 4175630,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004175630/kplr004175630-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07148.01",
+      "kepid": 9221627,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0092/009221627/kplr009221627-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00393.01",
+      "kepid": 3964109,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003964109/kplr003964109-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03570.01",
+      "kepid": 5023948,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005023948/kplr005023948-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07740.01",
+      "kepid": 5774375,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0057/005774375/kplr005774375-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04681.01",
+      "kepid": 3857860,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003857860/kplr003857860-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07015.01",
+      "kepid": 8302473,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008302473/kplr008302473-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03673.01",
+      "kepid": 11455484,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0114/011455484/kplr011455484-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07101.01",
+      "kepid": 8848115,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0088/008848115/kplr008848115-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01777.01",
+      "kepid": 5110423,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005110423/kplr005110423-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04992.01",
+      "kepid": 3553900,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003553900/kplr003553900-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04861.01",
+      "kepid": 6425597,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0064/006425597/kplr006425597-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01340.01",
+      "kepid": 4386059,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004386059/kplr004386059-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01333.01",
+      "kepid": 4285107,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004285107/kplr004285107-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03624.01",
+      "kepid": 8177798,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008177798/kplr008177798-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05129.01",
+      "kepid": 5131276,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005131276/kplr005131276-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02382.01",
+      "kepid": 6670075,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006670075/kplr006670075-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04498.01",
+      "kepid": 4844367,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0048/004844367/kplr004844367-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04062.01",
+      "kepid": 11858979,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0118/011858979/kplr011858979-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03665.01",
+      "kepid": 7812175,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0078/007812175/kplr007812175-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04925.01",
+      "kepid": 1725193,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0017/001725193/kplr001725193-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02591.01",
+      "kepid": 5513897,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0055/005513897/kplr005513897-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02250.01",
+      "kepid": 5942808,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0059/005942808/kplr005942808-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03738.01",
+      "kepid": 5478083,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005478083/kplr005478083-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04068.01",
+      "kepid": 6226908,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006226908/kplr006226908-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03066.01",
+      "kepid": 4067925,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004067925/kplr004067925-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06487.01",
+      "kepid": 5018787,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005018787/kplr005018787-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03453.01",
+      "kepid": 4932689,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0049/004932689/kplr004932689-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07714.01",
+      "kepid": 5024429,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005024429/kplr005024429-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02191.01",
+      "kepid": 5601258,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005601258/kplr005601258-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03542.01",
+      "kepid": 3964545,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003964545/kplr003964545-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04833.01",
+      "kepid": 10584140,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0105/010584140/kplr010584140-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00848.01",
+      "kepid": 6267425,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006267425/kplr006267425-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01188.01",
+      "kepid": 3860441,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003860441/kplr003860441-2011271113734_llc.fits"
+    },
+    {
+      "id": "K02444.01",
+      "kepid": 3354846,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0033/003354846/kplr003354846-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06492.01",
+      "kepid": 5022900,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005022900/kplr005022900-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03817.01",
+      "kepid": 5636642,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005636642/kplr005636642-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03724.01",
+      "kepid": 11200405,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0112/011200405/kplr011200405-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00454.01",
+      "kepid": 7098355,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0070/007098355/kplr007098355-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03414.01",
+      "kepid": 6023859,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006023859/kplr006023859-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02386.01",
+      "kepid": 4172013,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004172013/kplr004172013-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00052.01",
+      "kepid": 3558981,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0035/003558981/kplr003558981-2011271113734_llc.fits"
+    },
+    {
+      "id": "K05695.01",
+      "kepid": 9591728,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009591728/kplr009591728-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02594.01",
+      "kepid": 8004903,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008004903/kplr008004903-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03830.01",
+      "kepid": 10676927,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0106/010676927/kplr010676927-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06565.01",
+      "kepid": 5343976,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005343976/kplr005343976-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00813.01",
+      "kepid": 4275191,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004275191/kplr004275191-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04825.01",
+      "kepid": 4764774,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004764774/kplr004764774-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06509.01",
+      "kepid": 5080346,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005080346/kplr005080346-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01766.01",
+      "kepid": 3654950,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0036/003654950/kplr003654950-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01761.01",
+      "kepid": 4067336,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004067336/kplr004067336-2011271113734_llc.fits"
+    },
+    {
+      "id": "K01101.01",
+      "kepid": 3245969,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003245969/kplr003245969-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03642.01",
+      "kepid": 2441161,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002441161/kplr002441161-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07881.01",
+      "kepid": 8345473,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0083/008345473/kplr008345473-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03525.01",
+      "kepid": 4073707,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0040/004073707/kplr004073707-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03571.01",
+      "kepid": 5113053,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0051/005113053/kplr005113053-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04558.01",
+      "kepid": 5431027,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0054/005431027/kplr005431027-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01321.01",
+      "kepid": 4480676,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004480676/kplr004480676-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06746.01",
+      "kepid": 6628926,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0066/006628926/kplr006628926-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03829.01",
+      "kepid": 4474637,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004474637/kplr004474637-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06038.01",
+      "kepid": 7436177,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0074/007436177/kplr007436177-2011177032512_llc.fits"
+    },
+    {
+      "id": "K01619.01",
+      "kepid": 4276716,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0042/004276716/kplr004276716-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03700.01",
+      "kepid": 3838496,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003838496/kplr003838496-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02954.01",
+      "kepid": 4571536,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004571536/kplr004571536-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06376.01",
+      "kepid": 3973002,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003973002/kplr003973002-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07112.01",
+      "kepid": 8953281,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008953281/kplr008953281-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03276.01",
+      "kepid": 3858879,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858879/kplr003858879-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04853.01",
+      "kepid": 3758922,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0037/003758922/kplr003758922-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00494.01",
+      "kepid": 3966801,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0039/003966801/kplr003966801-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03666.01",
+      "kepid": 7708193,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007708193/kplr007708193-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06732.01",
+      "kepid": 6584167,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006584167/kplr006584167-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07168.01",
+      "kepid": 9394920,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0093/009394920/kplr009394920-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00821.01",
+      "kepid": 5021899,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005021899/kplr005021899-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03884.01",
+      "kepid": 4579313,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0045/004579313/kplr004579313-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03601.01",
+      "kepid": 9613070,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009613070/kplr009613070-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06394.01",
+      "kepid": 4180396,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0041/004180396/kplr004180396-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00136.01",
+      "kepid": 7601633,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0076/007601633/kplr007601633-2011271113734_llc.fits"
+    },
+    {
+      "id": "K07550.01",
+      "kepid": 4483235,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0044/004483235/kplr004483235-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00995.01",
+      "kepid": 3858949,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858949/kplr003858949-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06609.01",
+      "kepid": 5632781,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005632781/kplr005632781-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04543.01",
+      "kepid": 9776186,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009776186/kplr009776186-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06490.01",
+      "kepid": 5021732,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0050/005021732/kplr005021732-2011271113734_llc.fits"
+    },
+    {
+      "id": "K00391.01",
+      "kepid": 3858804,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0038/003858804/kplr003858804-2011271113734_llc.fits"
+    },
+    {
+      "id": "K06205.01",
+      "kepid": 9479460,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0094/009479460/kplr009479460-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00503.01",
+      "kepid": 5340644,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0053/005340644/kplr005340644-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06308.01",
+      "kepid": 3127817,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0031/003127817/kplr003127817-2011271113734_llc.fits"
+    },
+    {
+      "id": "K03368.01",
+      "kepid": 5257082,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005257082/kplr005257082-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06733.01",
+      "kepid": 6584278,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0065/006584278/kplr006584278-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05460.01",
+      "kepid": 8016211,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0080/008016211/kplr008016211-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02016.01",
+      "kepid": 8492026,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0084/008492026/kplr008492026-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04712.01",
+      "kepid": 4374610,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0043/004374610/kplr004374610-2011271113734_llc.fits"
+    },
+    {
+      "id": "K04966.01",
+      "kepid": 3222680,
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0032/003222680/kplr003222680-2011177032512_llc.fits"
+    }
+  ]
+}

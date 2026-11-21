@@ -4,7 +4,7 @@ const escapeHTML = v => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const pct = n => (n*100).toFixed(1)+'%';
 const number = (n,d=2) => Number(n).toFixed(d);
 let overview, current, view='local', requestCounter=0, exampleCSV=null, latestPrediction=null;
-async function api(url,options){const r=await fetch(url,options);const j=await r.json();if(!r.ok)throw Error(typeof j.detail==='string'?j.detail:JSON.stringify(j.detail));return j;}
+async function api(url,options){const r=await fetch(url,{cache:'no-store',...options});const j=await r.json();if(!r.ok)throw Error(typeof j.detail==='string'?j.detail:JSON.stringify(j.detail));return j;}
 function plotSVG(values,mask,low,high,label,width){
  const w=Math.max(300,width||$('#plot').clientWidth),h=245,p={l:52,r:18,t:16,b:43};
  const valid=values.filter((_,i)=>mask[i]);
@@ -76,7 +76,7 @@ $('#upload-form').onsubmit=async e=>{e.preventDefault();const button=$('#predict
  $('#download-prediction').onclick=()=>downloadJSON(latestPrediction,'exoplanet-inference.json');
  }catch(e){out.textContent=e.message;out.classList.add('error');}finally{button.disabled=false;}};
 (async()=>{try{overview=await api('/api/overview');const m=overview.metrics;$('#status').textContent=`REAL KEPLER DATA / ${overview.objects.length} stars / ${m.counts.test} held-out test stars / trained on ${m.device.toUpperCase()} / pilot experiment`;
- $('#dataset-note').textContent=`DR25 · Q9 · ${overview.objects.length} usable targets`;renderEvaluation();renderTargets();loadDiagnostics();}catch(e){$('#status').textContent=e.message;$('#status').classList.add('error');}})();
+ $('#dataset-note').textContent=`DR25 · Q9 · ${overview.objects.length} usable targets`;renderEvaluation();renderTargets();loadDiagnostics();loadResearch();}catch(e){$('#status').textContent=e.message;$('#status').classList.add('error');}})();
 
 function downloadJSON(data,name){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 $('#curve-file').addEventListener('change',()=>{exampleCSV=null;$('#upload-result').textContent='';});

@@ -42,6 +42,10 @@ test('local app diagnostics, filtering, example inference and threshold isolatio
   await until(()=>$('#download-prediction'),'inference completion');
   assert.match($('#upload-result').textContent,/0\.648/);assert.ok($('#upload-plot svg'));
   assert.equal($('#predict-button').disabled,false);
+  $('#search-bls').click();await until(()=>$('#bls-result').textContent.includes('Strongest box match'),'blind period search');
+  assert.equal($('#search-bls').disabled,false);assert.ok(Number($('#period').value)>0);
+  $('.nav[data-page="research"]').click();assert.ok($('#research').classList.contains('active'));
+  await until(()=>!$('#research-status').textContent.includes('Loading'),'research report');
   assert.deepEqual(errors,[]);
  }finally{if(dom)dom.window.close();server.kill('SIGTERM');await new Promise(resolve=>{if(server.exitCode!==null)return resolve();server.once('exit',resolve);});}
 });
