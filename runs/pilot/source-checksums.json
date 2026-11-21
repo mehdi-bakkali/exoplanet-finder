@@ -1,0 +1,8 @@
+{
+  "exofinder/__init__.py": "15a27f533ee83790dc52a840206a09b0eb9eb941eb7cef0772ed75260554d9a3",
+  "exofinder/data.py": "53246ec60872f4b68e5e57f7104442252ea8fb2d06d7770a5d8743df94359fd1",
+  "exofinder/model.py": "77c741f508a8e0060f8782f3bcae9d21990dea2065ac4881abb8136c428f8060",
+  "exofinder/preprocess.py": "f0ad5eb1c29b89796da7a30105d54114ab4e5daa728f69625931f177810dd2aa",
+  "exofinder/server.py": "154cb544242116f1cfcd48e5fee71f336f776ea80c25e268d2d25371252b7018",
+  "exofinder/train.py": "f897243ce4f50598a9647ac2b8beb4eb05d35abf1a2f698fbc9db3bf3f23d74c"
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exoplanet-finder"
+version = "0.2.0"
+description = "Reproducible Kepler transit vetting with a dual-view 1D CNN"
+authors = [{name = "mehdi-bakkali"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.14"
+dependencies = ["torch>=2.6", "numpy", "pandas", "scipy", "scikit-learn", "astropy", "fastapi", "uvicorn", "requests"]
+
+[project.urls]
+Repository = "https://github.com/mehdi-bakkali/exoplanet-finder"
+Documentation = "https://github.com/mehdi-bakkali/exoplanet-finder#readme"
+Issues = "https://github.com/mehdi-bakkali/exoplanet-finder/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["exofinder*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

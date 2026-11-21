@@ -1,0 +1,193 @@
+{
+  "source": "NASA Kepler DR25 KOI; MAST public Q9 PDCSAP light curves",
+  "query": "select kepid,kepoi_name,kepler_name,koi_pdisposition,koi_period,koi_time0bk,koi_duration,koi_fpflag_ss,koi_fpflag_nt,koi_fpflag_co,koi_fpflag_ec from q1_q17_dr25_koi where koi_period > 0.5 and koi_period < 30 and koi_duration > 0",
+  "retrieved_utc": "2026-11-20T22:31:50.569829+00:00",
+  "seed": 42,
+  "requested": 400,
+  "usable": 356,
+  "failures": [
+    {
+      "id": "K00169.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006185711/kplr006185711-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00660.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0062/006267535/kplr006267535-2011177032512_llc.fits"
+    },
+    {
+      "id": "K00702.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K00817.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0047/004725681/kplr004725681-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02542.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0061/006183511/kplr006183511-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02934.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0109/010964265/kplr010964265-2011177032512_llc.fits"
+    },
+    {
+      "id": "K02949.02",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0060/006026737/kplr006026737-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03242.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0069/006928906/kplr006928906-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03612.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0105/010518735/kplr010518735-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03621.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009775253/kplr009775253-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03624.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008177798/kplr008177798-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03713.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008127648/kplr008127648-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03721.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0077/007763269/kplr007763269-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03754.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008937019/kplr008937019-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03755.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009896435/kplr009896435-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03771.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0105/010555365/kplr010555365-2011177032512_llc.fits"
+    },
+    {
+      "id": "K03781.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K03852.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K03879.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K03924.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0014/001433980/kplr001433980-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04142.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0097/009716302/kplr009716302-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04376.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0025/002570773/kplr002570773-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04713.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0052/005253802/kplr005253802-2011177032512_llc.fits"
+    },
+    {
+      "id": "K04731.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K05275.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0063/006367663/kplr006367663-2011177032512_llc.fits"
+    },
+    {
+      "id": "K05543.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0085/008560475/kplr008560475-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06051.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008153568/kplr008153568-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06054.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0081/008168581/kplr008168581-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06193.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0091/009119652/kplr009119652-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06196.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0092/009282687/kplr009282687-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06201.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0093/009343862/kplr009343862-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06271.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0024/002438062/kplr002438062-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06774.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0068/006842345/kplr006842345-2011177032512_llc.fits"
+    },
+    {
+      "id": "K06941.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K07112.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0089/008953281/kplr008953281-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07205.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0096/009635520/kplr009635520-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07321.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0104/010407047/kplr010407047-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07642.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K07816.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K07823.01",
+      "reason": "Transit duration must be positive and shorter than a quarter-period."
+    },
+    {
+      "id": "K07943.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0095/009531850/kplr009531850-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07973.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0098/009899345/kplr009899345-2011177032512_llc.fits"
+    },
+    {
+      "id": "K07993.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0102/010219288/kplr010219288-2011177032512_llc.fits"
+    },
+    {
+      "id": "K08257.01",
+      "reason": "404 Client Error: Not Found for url: https://stpubdata.s3.amazonaws.com/kepler/public/lightcurves/0056/005683219/kplr005683219-2011177032512_llc.fits"
+    }
+  ],
+  "catalog_sha256": "69f6689423bcc5fb743ecfea0b1deadf234c5244fb046f668b3b62560f4ab1dc",
+  "views_sha256": "aa3f5c0e540d43d7dd786fe4e9b1f4b4bdab8dfc24cdf431cb2235b547f792e0",
+  "scope": "Q9 only; 0.5 < period < 30 days; balanced subsample; one KOI per star; quality == 0",
+  "labels": {
+    "0": "DR25 false positive",
+    "1": "DR25 planet candidate (not necessarily confirmed)"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "run": "pilot",
+  "seed": 42,
+  "device": "mps",
+  "seconds": 5.2352330684661865,
+  "parameters": 48865,
+  "best_epoch": 5,
+  "threshold": 0.5697445869445801,
+  "baseline_threshold": 0.4942812919616699,
+  "dataset_sha256": "aa3f5c0e540d43d7dd786fe4e9b1f4b4bdab8dfc24cdf431cb2235b547f792e0",
+  "counts": {
+    "train": 213,
+    "validation": 71,
+    "test": 72
+  },
+  "test_prevalence": 0.5277777777777778,
+  "cnn": {
+    "average_precision": 0.8745970190497665,
+    "roc_auc": 0.8506191950464397,
+    "precision": 0.8157894736842105,
+    "recall": 0.8157894736842105,
+    "f1": 0.8157894736842105,
+    "brier": 0.211460143327713,
+    "confusion_matrix": [
+      [
+        27,
+        7
+      ],
+      [
+        7,
+        31
+      ]
+    ]
+  },
+  "baseline": {
+    "average_precision": 0.8035889839156591,
+    "roc_auc": 0.8134674922600619,
+    "precision": 0.625,
+    "recall": 0.9210526315789473,
+    "f1": 0.7446808510638298,
+    "brier": 0.2178756445646286,
+    "confusion_matrix": [
+      [
+        13,
+        21
+      ],
+      [
+        3,
+        35
+      ]
+    ]
+  },
+  "test_ap_95ci": [
+    0.7623757019189249,
+    0.9550011376810057
+  ],
+  "validation": {
+    "average_precision": 0.7746659940493663,
+    "roc_auc": 0.7885532591414944,
+    "precision": 0.7380952380952381,
+    "recall": 0.8378378378378378,
+    "f1": 0.7848101265822784,
+    "brier": 0.19899411499500275,
+    "confusion_matrix": [
+      [
+        23,
+        11
+      ],
+      [
+        6,
+        31
+      ]
+    ]
+  },
+  "limitations": [
+    "Pilot subset, not mission-wide performance.",
+    "DR25 candidates are not confirmed planets.",
+    "Ephemeris supplied by catalog: this vets known signals, not a blind transit search.",
+    "One quarter; short periods; balanced sampling changes prevalence.",
+    "Uncalibrated scores are not astrophysical probabilities.",
+    "MPS seeds improve repeatability but do not guarantee bitwise deterministic kernels."
+  ]
+}

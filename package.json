@@ -1,0 +1,12 @@
+{
+  "name": "exoplanet-finder-ui-tests",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/test_ui.cjs",
+    "test:csv": "node --test tests/test_csv.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "31.0.1"
+  }
+}

@@ -1,0 +1,32 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scientific and API dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e '.[test]'
+      - name: Python tests
+        run: python -m pytest -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install frontend test dependencies
+        run: npx --yes pnpm@11.25.0 install --frozen-lockfile
+      - name: CSV and interface integration tests
+        run: |
+          node --test tests/test_csv.cjs
+          EXOFINDER_PYTHON="$(command -v python)" node --test tests/test_ui.cjs

@@ -1,0 +1,14 @@
+{
+  "exofinder/__init__.py": "15a27f533ee83790dc52a840206a09b0eb9eb941eb7cef0772ed75260554d9a3",
+  "exofinder/data.py": "53246ec60872f4b68e5e57f7104442252ea8fb2d06d7770a5d8743df94359fd1",
+  "exofinder/diagnostics.py": "04667e100f3773c2f0050645cd66a7c3bdeacf44d7c34dcdadd2ca2cb448a9dd",
+  "exofinder/model.py": "77c741f508a8e0060f8782f3bcae9d21990dea2065ac4881abb8136c428f8060",
+  "exofinder/preprocess.py": "f0ad5eb1c29b89796da7a30105d54114ab4e5daa728f69625931f177810dd2aa",
+  "exofinder/server.py": "4e5414ee1980c0a0eb28be9e0d07470d33ac0331a91575c89fb87761bd9a5f64",
+  "exofinder/train.py": "f897243ce4f50598a9647ac2b8beb4eb05d35abf1a2f698fbc9db3bf3f23d74c",
+  "web/app.js": "217d982ad581a39e7d5cb47f843ffdcdd79ff87b4560d47ed19497b7917e918d",
+  "web/csv.js": "4b49b93996203693fbc251900473246af1f652421c2f8bfa2be8faf1114e19fc",
+  "web/diagnostics.js": "7280de0c6786f321f1f6bd481ab6ae816c91cc4f4ff9a9a580063e6c4551ae16",
+  "web/index.html": "bec31af1b0cfd3dd0fe5f094940eeb0ca1b3ea8fda203534142da3759d8567cf",
+  "web/style.css": "d56017699c5190afcd58969540453f43f8827245147bdeeb40b06dcbb50be5d3"
+}

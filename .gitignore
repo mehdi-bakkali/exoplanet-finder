@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/raw/
+*.pyc
+.DS_Store
+
+node_modules/
+.env
+.env.*
+!.env.example
+*.zip
+*.egg-info/
+build/
+dist/
